@@ -16,5 +16,8 @@ arr.forEach((person) => {
 
 //Part 3
 
-const filter = arr.filter((person) => person.mood === `happy`);
-console.log(filter);
+arr
+  .filter((people) => people.mood === `happy`)
+  .forEach((person) => {
+    console.log(person.name);
+  });
